@@ -1,0 +1,52 @@
+[data-accordion] {
+  max-width: 80%;
+  margin: 0 auto;
+  border: 0.4vmin solid currentColor;
+  border-radius: 2vmin;
+  padding: 1.4vmin;
+}
+
+[data-accordion-item] {
+  margin: 0.5em 0;
+}
+
+[data-accordion-item]:last-of-type {
+  margin-block-end: 0;
+}
+
+[data-accordion-item]:first-of-type {
+  margin-block-start: 0;
+}
+
+[data-accordion-button] {
+  appearance: none;
+  font: inherit;
+  display: block;
+  width: 100%;
+  background: none;
+  color: inherit;
+  border: 0.4vmin solid currentColor;
+  border-radius: 0.5vmin;
+  margin: 0;
+  padding: 1vmin 1.2vmin;
+  line-height: 1.2;
+}
+
+[data-accordion-button]:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.6vmin rgb(255, 102, 0);
+}
+
+[data-accordion-button][disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+[data-accordion-panel] {
+  font-size: 0.8em;
+  padding: 2vmin;
+}
+
+[data-accordion-panel][hidden] {
+  display: none;
+}
