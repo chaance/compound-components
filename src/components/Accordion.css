@@ -30,16 +30,20 @@
   margin: 0;
   padding: 1vmin 1.2vmin;
   line-height: 1.2;
+  cursor: pointer;
+  transition: transform 100ms ease-out;
+  transform: translateY(0);
 }
 
 [data-accordion-button]:active {
-  background: #fff;
-  color: #161718;
+  background: var(--text-color);
+  color: var(--background-color);
+  transform: translateY(3px);
 }
 
 [data-accordion-button]:focus {
   outline: none;
-  box-shadow: 0 0 0 0.6vmin rgb(255, 102, 0);
+  box-shadow: 0 0 0 0.6vmin var(--focus-color);
 }
 
 [data-accordion-button][disabled] {
