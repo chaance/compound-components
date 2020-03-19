@@ -20,6 +20,9 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "prettier": {
+    "trailingComma": "es5"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
