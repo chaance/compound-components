@@ -82,6 +82,7 @@ export function AccordionButton({
   onClick,
   onKeyDown,
   tabIndex,
+  headingLevel,
   ...props
 }) {
   let { descendants: accordionItems } = useDescendantContext();
@@ -171,18 +172,20 @@ export function AccordionButton({
   }
 
   return (
-    <button
-      aria-controls={panelId}
-      aria-expanded={state === "open"}
-      {...props}
-      ref={ref}
-      data-accordion-button=""
-      id={buttonId}
-      onClick={wrapEvent(onClick, handleClick)}
-      onKeyDown={wrapEvent(onKeyDown, handleKeyDown)}
-    >
-      {children}
-    </button>
+    <H level={headingLevel} data-accordion-heading="">
+      <button
+        aria-controls={panelId}
+        aria-expanded={state === "open"}
+        {...props}
+        ref={ref}
+        data-accordion-button=""
+        id={buttonId}
+        onClick={wrapEvent(onClick, handleClick)}
+        onKeyDown={wrapEvent(onKeyDown, handleKeyDown)}
+      >
+        {children}
+      </button>
+    </H>
   );
 }
 
@@ -224,4 +227,9 @@ function wrapEvent(theirHandler, ourHandler) {
       return ourHandler(event);
     }
   };
+}
+
+function H({ level = 2, ...props }) {
+  let Comp = `h${level}`;
+  return <Comp {...props} />;
 }

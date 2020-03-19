@@ -17,22 +17,25 @@ function App() {
             <AccordionItem>
               <AccordionButton>Hello darkness, my old friend</AccordionButton>
               <AccordionPanel>
-                Fringilla porta porttitor tristique praesent habitant, habitasse
-                ut faucibus congue arcu nullam, metus montes duis fermentum. Dui
-                cursus proin dignissim suspendisse lobortis faucibus
-                pellentesque, curae integer facilisi lorem ad class condimentum
-                maecenas, phasellus mus sagittis non diam taciti.
+                <p>
+                  And in the naked light I saw Ten thousand people, maybe more.
+                  People talking without speaking, People hearing without
+                  listening, People writing songs that voices never share. And
+                  no one dare Disturb the sound of silence.
+                </p>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem disabled>
+            <AccordionItem>
               <AccordionButton>
                 I've come to talk with you again
               </AccordionButton>
               <AccordionPanel>
-                Fringilla porta porttitor tristique praesent habitant, habitasse
-                ut faucibus congue arcu nullam, metus montes duis fermentum. Cum
-                faucibus turpis risus hendrerit mi volutpat laoreet, netus justo
-                consectetur vivamus nunc per, dui at leo nascetur sociis taciti.
+                <p>
+                  "Fools" said I, "You do not know Silence like a cancer grows.
+                  Hear my words that I might teach you. Take my arms that I
+                  might reach you". But my words like silent raindrops fell And
+                  echoed In the wells of silence.
+                </p>
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem>
@@ -40,12 +43,22 @@ function App() {
                 Because a vision softly creeping
               </AccordionButton>
               <AccordionPanel>
-                Integer dui nostra vehicula sit augue metus faucibus aliquam
-                vulputate, curae per himenaeos erat facilisi lorem consectetur
-                penatibus. Penatibus vel mattis potenti orci libero augue aenean
-                posuere, adipiscing dapibus eros laoreet dui sagittis
-                condimentum, ut pellentesque curae natoque aliquet velit
-                integer.
+                <p>
+                  And the people bowed and prayed To the neon god they made. And
+                  the sign flashed out its warning In the words that it was
+                  forming. And the sign said:
+                </p>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem>
+              <AccordionButton>
+                Left its seeds while I was sleeping
+              </AccordionButton>
+              <AccordionPanel>
+                <p>
+                  "The words of the prophets Are written on the subway walls And
+                  tenement halls." And whisper'd in the sounds of silence.
+                </p>
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
